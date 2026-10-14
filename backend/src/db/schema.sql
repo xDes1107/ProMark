@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS professionals (
+    id SERIAL PRIMARY KEY,
+
+    name VARCHAR(150) NOT NULL,
+    phone VARCHAR(30),
+    email VARCHAR(150),
+
+    trade VARCHAR(100) NOT NULL,
+    company VARCHAR(150),
+
+    location VARCHAR(150),
+
+    notes TEXT,
+
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
